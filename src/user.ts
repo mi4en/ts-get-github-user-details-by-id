@@ -12,6 +12,6 @@ export class User {
         this.fullName = userResponse.name;
         this.repoCount = userResponse.public_repos;
         this.followerCount = userResponse.followers;
-        //this.repos = 
+        this.repos = userResponse.repos;
     }
 }
