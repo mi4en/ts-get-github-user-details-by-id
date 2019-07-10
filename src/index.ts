@@ -1,1 +1,4 @@
-console.log('test');
+import {GithubApiService} from './GithubApiService';
+
+let svc = new GithubApiService();
+svc.getUserInfo('mi4en');
