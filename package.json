@@ -1,0 +1,26 @@
+{
+  "name": "ts-get-github-user-details-by-id",
+  "version": "1.0.0",
+  "description": "simple training project",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node out/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mi4en/ts-get-github-user-details-by-id.git"
+  },
+  "keywords": [
+    "npm",
+    "typescript",
+    "javascript",
+    "github"
+  ],
+  "author": "Mario Nikolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mi4en/ts-get-github-user-details-by-id/issues"
+  },
+  "homepage": "https://github.com/mi4en/ts-get-github-user-details-by-id#readme"
+}
