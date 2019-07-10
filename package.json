@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/mi4en/ts-get-github-user-details-by-id/issues"
   },
-  "homepage": "https://github.com/mi4en/ts-get-github-user-details-by-id#readme"
+  "homepage": "https://github.com/mi4en/ts-get-github-user-details-by-id#readme",
+  "dependencies": {
+    "lodash": "^4.17.13",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.136",
+    "@types/request": "^2.48.1"
+  }
 }
