@@ -10,11 +10,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var GithubApiService_1 = require("./GithubApiService");
 var _ = __importStar(require("lodash"));
 var svc = new GithubApiService_1.GithubApiService();
-svc.getUserInfo('mi4en', function (user) {
-    svc.getRepos('mi4en', function (repos) {
-        var sortedRepos = _.sortBy(repos, [function (repo) { return repo.size * -1; }]);
-        var filteredRepos = _.take(sortedRepos, 5);
-        user.repos = filteredRepos;
-        console.log(user);
+if (process.argv.length < 3) {
+    console.log('Please enter Github username as argument');
+}
+else {
+    var username_1 = process.argv[2];
+    svc.getUserInfo(username_1, function (user) {
+        svc.getRepos(username_1, function (repos) {
+            var sortedRepos = _.sortBy(repos, [function (repo) { return repo.size * -1; }]); // this * -1 reverse the order
+            var filteredRepos = _.take(sortedRepos, 5);
+            user.repos = filteredRepos;
+            console.log(user);
+        });
     });
-});
+}
