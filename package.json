@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mi4en/ts-get-github-user-details-by-id#readme",
   "dependencies": {
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "request": "^2.88.0"
   },
   "devDependencies": {
